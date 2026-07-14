@@ -1,5 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NvaigationBar from './NavigationBar'
+import NavigationBar from './NavigationBar'
 
 const AddVolunteer = () => {
 
@@ -47,7 +49,7 @@ const AddVolunteer = () => {
     return (
 
         <div>
-
+            <NavigationBar/>
             <div className="container mt-4">
                 <div className="row justify-content-center">
                     <div className="col col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -97,7 +99,7 @@ const AddVolunteer = () => {
                                 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                     <label className="form-label">Blood Group</label>
                                     <select
-                                        className="form-control" name="bloodGroup" value={input.bloodGroup}  onChange={inputHandler}>
+                                        className="form-control" name="bloodGroup" value={input.bloodGroup} onChange={inputHandler}>
                                         <option value="">Select Blood Group</option>
                                         <option value="A+">A+</option>
                                         <option value="A-">A-</option>
@@ -122,7 +124,7 @@ const AddVolunteer = () => {
 
                                 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                     <label className="form-label">Camp Name</label>
-                                    <input type="text" className="form-control" name="campName" value={input.campName} onChange={inputHandler}/>
+                                    <input type="text" className="form-control" name="campName" value={input.campName} onChange={inputHandler} />
                                 </div>
 
                                 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -141,7 +143,7 @@ const AddVolunteer = () => {
                                 </div>
 
                                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    <button className="btn btn-primary" onClick={readValue}>ADD</button>
+                                    <button className="btn btn-success" onClick={readValue}>ADD</button>
                                 </div>
 
                             </div>
